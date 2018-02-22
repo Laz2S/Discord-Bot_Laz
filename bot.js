@@ -21,7 +21,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		case 'comandos':
                 bot.sendMessage({
                     to: channelID,
-                    message: '\nComandos-CS\n1cssmoke\n---------------\nComandos-LoL\n1lolbuild\n1lolprofile\n---------------\nAleatorio\n1stream\n1falabot\n1ping\n1rage\n1say\n1random\n1giria'
+                    message: '\nComandos-CS\n1csnade\n---------------\nComandos-LoL\n1lolbuild\n1lolprofile\n---------------\nAleatorio\n1stream\n1falabot\n1ping\n1rage\n1say\n1random\n1giria'
                 });
             break;
 		case 'falabot':
@@ -31,7 +31,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
             break;
 		case 'stream':
-			var argsbuild = message.substring(7).split(' ');
+			var argsbuild = message.substring(1).split(' ');
 			var cmdbuild = args[0];
     	    		bot.sendMessage({
                     		to: channelID,
@@ -39,8 +39,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 	});
 
             break;
-		case 'cssmoke':
-			var argsbuild = message.substring(7).split(' ');
+		case 'csnade':
+			var argsbuild = message.substring(1).split(' ');
 			var cmdbuild = args[0];
     	    		bot.sendMessage({
                     		to: channelID,
@@ -49,7 +49,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
             break;
 		case 'lolbuild':
-			var argsbuild = message.substring(7).split(' ');
+			var argsbuild = message.substring(1).split(' ');
 			var cmdbuild = args[0];
     	    		bot.sendMessage({
                     		to: channelID,
