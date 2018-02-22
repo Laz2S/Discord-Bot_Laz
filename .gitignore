@@ -1,0 +1,6 @@
+# discord.io
+node_modules
+package-lock.json
+
+# auth token
+auth.json
